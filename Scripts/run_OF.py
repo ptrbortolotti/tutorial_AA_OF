@@ -3,7 +3,7 @@ import platform
 import subprocess
 
 if platform.system() == 'Windows':
-    FAST_exe        = os.path.dirname( os.path.dirname( os.path.realpath(__file__) ) ) + os.sep + 'OF_executables' + os.sep + 'openfast_x64.exe'
+    FAST_exe        = os.path.dirname( os.path.dirname( os.path.realpath(__file__) ) ) + os.sep + 'OF_executables' + os.sep + 'openfast.exe'
 elif platform.system() == 'Darwin':
     FAST_exe        = os.path.dirname( os.path.dirname( os.path.realpath(__file__) ) ) + os.sep + 'OF_executables' + os.sep + 'openfast_mac'
 else:
