@@ -70,8 +70,8 @@ else:
     ax.set_aspect('equal')
     ax.set_xlabel('x [m]', fontsize=fs+2, fontweight='bold')
     ax.set_ylabel('y [m]', fontsize=fs+2, fontweight='bold')
-    tcf=ax.tricontourf(x,y,z, range(58, 84, 1))
-    fig.colorbar(tcf,orientation="vertical").set_label(label = 'Overall SPL [dB]', fontsize=fs+2,weight='bold')
+    tcf=ax.tricontourf(x,y,z, range(40, 64, 1))
+    fig.colorbar(tcf,orientation="vertical").set_label(label = 'Overall SPL [dB(A)]', fontsize=fs+2,weight='bold')
     if save_fig == True:
         fig_name = 'directivity_map'
         fig.savefig(output_dir + os.sep + fig_name + fig_ext)
